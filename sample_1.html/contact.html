@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+　　    <meta charset="utf-8">
+        <title>WCB Cafe - CONTACT</title>
+        <meta name="description" content="ブレンドコーヒーとヘルシーなオーガニックフードを提供するカフェ">
+   <!--css-->
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Philospher" rel="stylesheet"/>
+         <link rel="stylesheet" href="sample.css/style.css">
+        <meta name="viewpoint" content="width-device-width", intial-scale="1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+    
+    
+  <body>
+     <div id="contact" class="big-bg"> 
+      <header class="page-header wrapper">
+        <h1><a href="index.html"><img class="logo" src="images/logo.svg" alt="WCB CAFE"></a></h1>
+        <span id="view_today"></span>
+
+        <script type="text/javascript">
+        document.getElementById("view_today").innerHTML = getToday();
+
+        function getToday() {
+	      var now = new Date();
+	      var year = now.getFullYear();
+	      var mon = now.getMonth()+1; 
+	      var day = now.getDate();
+	      var you = now.getDay(); 
+
+	
+	      var youbi = new Array("日","月","火","水","木","金","土");
+	
+	      var s = year + "年" + mon + "月" + day + "日 (" + youbi[you] + ")";
+	      return s;
+         }
+        </script>
+        <div>
+    　　<div class="navToggle text-white d-flex">
+    　　<span></span><span></span><span></span><br>
+    　　<a class="mt-4 pt-2">MENU</a>
+　　    </div>
+
+　　    <nav class="globalMenuSp">
+    　  　 <ul>
+         　<li><a href="index.html">HOME</a></li>
+         　<li><a href="news.html">NEWS</a></li>
+         　<li><a href="menu.html">MENU</a></li>
+         　<li><a href="contact.html">CONTACT</a></li>
+    　  　 </ul>
+　　    </nav>
+　　    </div>
+    　</header> 
+      
+      <div class="wrapper">
+        <h2 class="page-title">Contact</h2>
+        <form action="#">
+         　<div>
+         　    <label for="name">お名前</label>
+              <input type="text" id="name" name="your-name"/>
+         　</div> 
+          
+           <div>
+              <label for="email">メールアドレス</label>
+              <input type="email" id="email" name="your-email"/>
+           </div>
+          
+          <div>
+              <label for="message">メッセージ</label>
+              <textarea id="message" name="your-message"></textarea>
+          </div>
+        
+            <input type="submit" class="button" value="送信">  
+        </form>
+      </div><!--/. wrapper-->
+     </div> 
+     
+     <section id="location">
+       <div class="wrapper">
+          <div class="location-info">
+             <h3 class="sub-title">カフェ　東駅前店</h3>
+             <p>
+                住所:　東京都〇〇区<br>000-22-1<br>電話：03-1111-1111　<br>営業時間：10:00~19:00<br>休日：水曜
+             </p>
+            
+          </div> <!-- /.location-info -->
+          <div class="location-map">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.3733358117033!2d130.44215331520505!3d33.67339598071063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35418f332c99a63f%3A0xff68d5f62a6d2c9d!2z44Kk44Oq44Kq44K544OV44Kh44Kk77yI772F772M772J772P772Tz4bvvIk!5e0!3m2!1sja!2sjp!4v1594794329479!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
+        　</div><!-- /.location-map -->
+       </div><!-- /.wrapper -->
+     </section>
+       <ul id="faq-list">
+          <li class="faq-list-item">
+            <h3 class="question">現金以外の決済は可能ですか？</h3>
+            <span>+</span>
+            <div class="answer">
+              <p>可能です。クレジットカードでの決済の他、PayPayでの決済も可能です。</p>
+            </div>
+          </li>
+          <li class="faq-list-item">
+            <h3 class="question">年末年始は営業を行っていますか？</h3>
+            <span>+</span>
+            <div class="answer">
+              <p>申し訳ございません。１２月３１日から１月３日はお店をお休みさせていただいております。</p>
+            </div>
+          </li>
+          <li class="faq-list-item">
+            <h3 class="question">席数は何席ですか？</h3>
+            <span>+</span>
+            <div class="answer">
+              <p>３０席です。</p>
+            </div>
+          </li>
+        </ul>
+        <script src="main.js/script.js"></script>
+    <footer>
+         <div class="wrapper">
+            <p><small>&copy; 2019 Manabox</small></p>
+         </div>
+    </footer>
+  </body>
+   
+ </html>

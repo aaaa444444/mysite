@@ -1,0 +1,579 @@
+html {
+  font-size: 100%;
+}
+
+body {
+    font-family: "Yu Gothic Medium","源ゴシック　medium",YuGOthic, "源　ゴシック体","ヒラギノ角ゴ　pro W3",sans-selif; 
+    line-height: 1.7;
+    color: #432;
+}
+a {
+  text-decoration: none;
+}
+
+
+img{
+  max-width: 100%;
+}
+
+/* HEADER
+---------------------------------------*/
+.logo {
+  width: 210px;
+  margin-top: 14px;
+}
+#view_today {
+  margin: 30px 10px 10px;
+}
+.wrapper{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.main-nav {
+  display: flex;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-top: 34px;
+  list-style: none;
+ }
+ 
+ .main-nav li {
+   margin-left: 36px;
+ }
+ 
+ .main nav a {
+   margin-left: 36px
+ }
+ 
+  
+.main-nav a {
+  color: #432
+}
+
+.main-nav a:hover  {
+   color: #0bd;
+}
+/* HOME
+------------------------------------------------*/
+.home-content{
+  text-align: center;
+  margin-top: 10%;
+}
+
+.home-content p {
+  font-size: 1.125rem;
+  margin: 10px 0 42px;
+}
+/*見出し*/
+.page-title{
+  font-size: 5rem;
+  font-family: "Philospher" , selif;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+/*大きな背景画像*/
+.big-bg {
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+/*ボタン*/
+.button{
+  font-size: 1.375rem;
+  background: #0bd;
+  color: #fff;
+  border-radius: 5px;
+  padding: 18px 32px;
+  margin-right: 70px;
+}
+
+.button:hover {
+  background: #0090aa;
+} 
+.btn{
+  font-size: 1.375rem;
+  background: #0bd;
+  color: #fff;
+  padding: 18px 64px;
+  
+}
+/*モーダル*/
+.signup-modal-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+
+#submit-btn {
+  display: inline-block;
+  padding: 14px 140px;
+  background-color: #5dca88;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+#home {
+  background-image: url(../images/main-bg.jpg),linear-gradient(#c9ffbf, #ffafbd);
+  background-color: #0bd;
+  min-height: 100vh;
+}  
+  
+#home .page-title {
+  text-transform: none;
+} 
+  
+  
+/* NEWS
+-----------------------------------------------------*/
+  #news {
+    background-image: url(../images/news-bg.jpg);
+    height: 270px;
+    margin-bottom: 40px;
+  }
+  
+  
+ #news .page-title{
+   text-align: center;
+ }
+  
+/* フッター  
+ -------------------------------------------------*/ 
+footer {
+  background: #432;
+  text-align: center;
+  padding: 26px 0;
+  margin-top: 50px;
+}  
+  
+footer p {
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+/*記事部分*/
+articl {
+  width: 60%;
+}
+
+
+/*サイドバー*/
+aside{
+  width: 22%;
+}
+
+.news-contents {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+/*日付部分
+----------------------------------------*/
+.post-info {
+  position: relative;
+  padding-top: 4px;
+  margin-bottom: 40px;
+}
+
+.post-date {
+  background: #0bd;
+  border-radius: 50%;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  font-size: 1.625rem;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  padding-top: 10px;
+}
+
+.post-date span {
+  font-size: 1rem;
+  border-top: 1px rgba(255,255,255,.5) solid;
+  padding-top: 6px;
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
+/*タイトル、カテゴリー
+--------------------------------------------*/
+.post-title {
+  font-family: "Yu Mincho", "YuMincho", serif;
+  font-size: 2rem;
+  font-weight: normal;
+}
+.post-title,
+.post-cat{
+  margin-left: 120px;
+}
+
+.sub-title {
+  font-size: 1.375rem;
+  padding: 0px 8px 8px;
+  border-bottom: 2px #0bd solid;
+  font-weight: normal;
+}
+
+article img {
+  margin-bottom: 20px;
+}
+
+aside p {
+  padding: 12px 10px;
+}
+
+.sub-menu{
+  margin-bottom: 60px;
+  list-style: none;
+}
+
+.sub-menu a:hover {
+  color: #0bd;
+}
+
+/*MENU
+---------------------------------------------------*/
+#menu {
+  background-image: url(../images/menu-bg.jpg);
+  min-height: 100vh;
+}
+.menu-content {
+  max-width: 560px;
+  margin-top: 10%;
+}
+.menu-content .page-title {
+  text-align: center;
+}
+.menu-content p {
+  font-size: 1.125rem;
+  margin: 10px 0 0;
+}
+/* モバイル版
+-----------------------------------------------------*/
+@media (max-width: 600px) {
+  .page-title {
+    font-size : 2.5rem;
+  }
+  
+  /* HEADER */  
+  .main-nav {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  .main-nav li {
+    margin: 0 20px;
+  }
+
+
+/* HOME */
+  .home-content {
+    margin-top: 20%;
+  }
+  .page-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* NEWS */
+ .news-contents {
+      flex-direction: column;
+ }
+ article,
+ aside {
+    width: 100%;
+ }
+
+ #news .page-title {
+  margin-top: 30px;
+ }
+ aside {
+  margin-top: 30px;
+ }
+
+ .post-info {
+  margin-bottom: 30px;
+ }
+ .post-date {
+  width: 70px;
+  height: 70px;
+  font-size: 1rem;
+ }
+ .post-date span {
+  font-size: 0.875rem;
+  padding-top: 2px;
+ }
+ .post-title {
+  font-size: 1.375rem;
+ }
+ .post-cat {
+  font-size: 0.875rem;
+  margin-top: 10px;
+ }
+ .post-title,
+ .post-cat {
+   margin-left: 80px;
+ }
+} 
+/*モバイル版はここまで*/
+ .big-box {
+   grid-column: auto;
+   grid-row: auto;
+ }
+ .big-box img {
+   height: 100%;
+ }
+ /* MENU */
+ .menu-content {
+   margin-top: 20px;
+ }
+ 
+ .grid {
+   display: grid;
+   padding: 26px 26px;
+   grid-template-columns: repeat(3,1fr);
+   margin-top: 6%;
+   margin-bottom: 50px;
+ }
+ 
+ .big-box {
+   grid-column: 1/3;
+   grid-row: 1/3;
+ }
+ 
+ .big-box img {
+   height: 94%;
+   width: 100%;
+ }
+ 
+ /* CONTACT
+ --------------------------*/
+ #contact {
+   background-image: url(../images/contact-bg.jpg);
+   min-height: 100vh;
+ }
+ /*　フォーム*/
+ form div {
+   margin-bottom:14px;
+ }
+ label {
+   font-size: 1.125rem;
+   margin-bottom:10px;
+   display: block;
+ }
+ input[type="text"],
+ input[type="email"],
+ textarea {
+   background: rbga(255,255,255,.5);
+   border: 1px #fff solid;
+   border-radius: 5px;
+   padding: 10px;
+   font-size: 1rem;
+ }
+ input[type="text"],
+ input[type="email"] {
+  width: 100%;
+  max-width: 6rem;
+ }
+ 
+ textarea {
+   width: 100%;
+   max-width: 480px;
+   height: 6rem;
+ }
+ input[type="submit"] {
+   border: none;
+   cursor: pointer;
+   line-height: 1;
+ }
+
+/* 店舗情報・地図　*/
+ #location {
+   padding: 2% 0;
+ }
+
+#location .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.location-info {
+  width: 40%;
+}
+
+.location-info p {
+  padding: 12px 5px;
+  text-align: left;
+}
+
+.location-map {
+  width: 80%;
+}
+
+/* iframe */
+iframe {
+  width: 100%;
+}
+/*質問部分*/
+.faq-list-item {
+  margin:10px;
+  border-bottom:1px solid #ccc;
+  position:relative;
+  cursor:pointer;
+  text-align: left;
+}
+
+.faq-list-item h3 {
+  font-size: 14px;
+}
+
+.faq-list-item span {
+  position:absolute;
+  top:0;
+  right:5px;
+  color:#ccc;
+  font-size:13px;
+}
+
+.answer {
+  font-size: 12px;
+  padding: 5px 0px;
+  margin-bottom: 15px;
+  display:none;
+  
+}
+
+/*開閉のメニュー部分*/
+nav.globalMenuSp {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    transform: translateY(-100%);
+    transition: all 0.6s;
+    width: 100%;
+}
+
+nav.globalMenuSp ul {
+    background: #ccc;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+nav.globalMenuSp ul li {
+    font-size: 1.1em;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    border-bottom: 1px dotted #333;
+}
+
+/* 最後はラインを描かない */
+nav.globalMenuSp ul li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+nav.globalMenuSp ul li a {
+    display: block;
+    color: #000;
+    padding: 1em 0;
+}
+
+/* このクラスを、jQueryで付与・削除する */
+nav.globalMenuSp.active {
+    transform: translateY(0%);
+}
+
+.navToggle {
+    display: block;
+    position: fixed;    /* bodyに対しての絶対位置指定 */
+    right: 20px;
+    top: 20px;
+    width: 42px;
+    height: 51px;
+    cursor: pointer;
+    z-index: 3;
+    text-align: center;
+}
+
+.navToggle span {
+    display: block;
+    position: absolute;    /* .navToggleに対して */
+    width: 30px;
+    border-bottom: solid 3px #fff;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+    left: 6px;
+}
+
+.navToggle span:nth-child(1) {
+    top: 9px;
+}
+
+.navToggle span:nth-child(2) {
+    top: 18px;
+}
+
+.navToggle span:nth-child(3) {
+    top: 27px;
+}
+
+
+/* 最初のspanをマイナス45度に */
+.navToggle.active span:nth-child(1) {
+    top: 18px;
+    left: 6px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+/* 2番目と3番目のspanを45度に */
+.navToggle.active span:nth-child(2),
+.navToggle.active span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+

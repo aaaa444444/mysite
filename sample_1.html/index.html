@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+　　    <meta charset="utf-8">
+        <title>WCB Cafe</title>
+        <meta name="description" content="ブレンドコーヒーとヘルシーなオーガニックフードを提供するカフェ">
+   <!--css-->
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Philospher" rel="stylesheet"/>
+         <link rel="stylesheet" href="sample.css/style.css">
+         <link rel="icon" href="images/favicon.png" type="image/png" />
+        <meta name="viewpoint" content="width-device-width", intial-scale="1">
+        <link rel="icon" href="images/favicon.png" type="images/png" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+    
+    
+  <body>
+     <div id="home" class="big-bg"> 
+      <header class="page-header wrapper">
+        <h1><a href="index.html"><img class="logo" src="images/logo.svg" alt="WCB CAFE"></a></h1>
+        <span id="view_today"></span>
+
+        <script type="text/javascript">
+        document.getElementById("view_today").innerHTML = getToday();
+
+        function getToday() {
+	      var now = new Date();
+      	var year = now.getFullYear();
+      	var mon = now.getMonth()+1; 
+	      var day = now.getDate();
+	      var you = now.getDay(); 
+
+	
+	     var youbi = new Array("日","月","火","水","木","金","土");
+	
+	     var s = year + "年" + mon + "月" + day + "日 (" + youbi[you] + ")";
+	     return s;
+      }
+      </script>
+        <div>
+    　　<div class="navToggle text-white d-flex">
+    　　<span></span><span></span><span></span><br>
+    　　<a class="mt-4 pt-2">MENU</a>
+　　    </div>
+
+　　    <nav class="globalMenuSp">
+    　  　 <ul>
+         　<li><a href="index.html">HOME</a></li>
+         　<li><a href="news.html">NEWS</a></li>
+         　<li><a href="menu.html">MENU</a></li>
+         　<li><a href="contact.html">CONTACT</a></li>
+    　  　 </ul>
+　　    </nav>
+　　    </div>
+    　</header>　 
+      
+      <div class="home-content wrapper">
+        <h2 class="page-title">we'll make your day</h2>
+        <p>おしゃれなカフェで癒されてみませんか?無添加の食材でカラダからリフレッシュ</p>
+        <a class="button" href="menu.html">メニューを見る</a>
+      </div> <!--/#home-content -->
+      
+    </div> <!--/#home -->  
+    <script src="main.js/script.js"></script>
+  </body>
+   
+ </html>
+
+
+
